@@ -1,13 +1,15 @@
 import {Component} from '@angular/core';
-import {RouterOutlet} from '@angular/router';
 import {GosLibComponent} from '../../../gos-lib/src/lib/gos-lib.component';
 import {MyComponent} from './integrator/integrator.component';
+import {ExpanderComponent} from './expander/expander.component';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   imports: [
-    MyComponent
+    MyComponent,
+    GosLibComponent,
+    ExpanderComponent
   ],
   styleUrl: './app.component.scss'
 })

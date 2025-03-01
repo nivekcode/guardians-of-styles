@@ -1,14 +1,10 @@
 import {Component, ViewEncapsulation} from '@angular/core';
-import {GosLibComponent} from '../../../../gos-lib/src/lib/gos-lib.component';
 
 @Component({
   selector: 'integrator-comp',
   template: `
-    <lib-gos-lib/>
+    <ng-content/>
   `,
-  imports: [
-    GosLibComponent
-  ],
   styleUrls: ['./integrator.component.scss'],
   encapsulation: ViewEncapsulation.ShadowDom
 })

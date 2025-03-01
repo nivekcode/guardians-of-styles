@@ -6,4 +6,14 @@
   This is a subtitle coming from the app
 </h2>
 
-<integrator-comp/>
+<integrator-comp>
+  <lib-gos-lib/>
+</integrator-comp>
+
+<ng-template #content>
+  <integrator-comp>
+    <lib-gos-lib/>
+  </integrator-comp>
+</ng-template>
+
+<expander [content]="content"/>
